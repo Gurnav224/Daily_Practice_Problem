@@ -1,0 +1,29 @@
+
+@base_url=http://localhost:3000/api/v1
+
+### GET all books   
+GET {{base_url}}/books
+
+
+### create new book
+POST {{base_url}}/books
+Content-Type: application/json
+
+{
+    "title": "the harry potter",
+    "author": "mogli",
+    "price": 99.99
+}
+
+### update book
+PUT {{base_url}}/books/3
+Content-Type: application/json
+
+{
+    "title": "the dark tower",
+    "author": "william",
+    "price": 99.99
+}
+
+### delete book
+DELETE {{base_url}}/books/3
